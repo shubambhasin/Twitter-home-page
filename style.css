@@ -13,8 +13,11 @@
 .small-height {
   height: 5px;
   background-color: rgba(255, 255, 255, 0.05);
-
   width: 100%;
+}
+
+i {
+  cursor: pointer;
 }
 body {
   background-color: #1e1e36;
@@ -26,14 +29,14 @@ body {
   grid-template-columns: 2.5fr 4.5fr 2.5fr;
   height: 100vh;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   padding-left: 5rem;
 }
 
@@ -51,11 +54,17 @@ h6 {
   width: 100%;
   padding-left: 15px;
 }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .nav .navigation {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .nav-items {
@@ -70,14 +79,11 @@ h6 {
   background-color: rgba(255, 136, 0, 0.5);
 }
 
-
-main-sidebar
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.main-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 .feed {
   border-left: 1px solid rgba(95, 95, 95, 0.5);
@@ -90,11 +96,26 @@ main-sidebar
 }
 
 .search {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
 .search input {
-  padding: 0.5rem 0.2rem;
-  border-radius: 10px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
   border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: auto;
+
+  z-index: -2;
+}
+
+.search i {
+  color: rgba(245, 245, 245, 0.7);
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  z-index: 10;
 }
 .whats-happening {
   display: flex;
@@ -139,7 +160,6 @@ main-sidebar
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  height: 120px;
 }
 
 .section12 {
@@ -223,5 +243,41 @@ main-sidebar
   display: flex;
 }
 
+hr {
+  width: 100%;
+  border-color: rgba(255, 255, 255, 0.05);
+}
 
-.
+.red {
+  color: var(--offwhite);
+  background-color: transparent;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+
+.red:hover {
+  color: rgba(255, 65, 7, 0.7);
+  background-color: rgba(220, 20, 60, 0.4);
+}
+.green {
+  color: var(--offwhite);
+  padding: 0.3rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.green:hover
+{
+    color: rgba(0, 235, 0, 0.7);
+    background-color: rgb(23, 255, 23, 0.4);
+}
+.blue {
+  color: var(--offwhite);
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.blue:hover
+{
+    color: rgb(0, 132, 255);
+    background-color: rgba(0, 132, 255, 0.4);
+
+}
