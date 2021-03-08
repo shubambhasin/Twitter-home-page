@@ -1,0 +1,90 @@
+:root {
+  --accent-color: orange;
+  --offwhite: rgb(230, 230, 230);
+}
+
+body {
+  background-color: #0f0f1c;
+  font-family: sans-serif;
+  color: var(--offwhite);
+}
+.main {
+  display: grid;
+  grid-template-columns: 2.5fr 4.5fr 2.5fr;
+  height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.nav {
+  border: 1px solid var(--offwhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.nav .brand {
+  border-bottom: 1px solid var(--offwhite);
+  width: 100%;
+}
+.nav .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.feed {
+  border: 1px solid var(--offwhite);
+}
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--offwhite);
+  
+}
+
+.search {
+
+   
+}
+.search input
+{
+    padding: 0.5rem 0.2rem;
+    border-radius: 10px;
+    border: none;
+
+
+}
+.whats-happening {
+  border: 1px solid var(--offwhite);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.whats-happening .event1
+{
+    border: 1px solid var(--offwhite);
+    padding: 2rem 0;
+    display: flex;
+    border-radius: 10px;
+}
+
+.whats-happening .event2
+{
+    display: flex;
+    flex-direction: column;
+
+}
