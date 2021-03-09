@@ -211,12 +211,12 @@ gap: 3rem;
 
 .write-items {
   margin: 5px;
-  display: flex;
-  justify-content: space-between;
+  
 }
 
 .write-items span {
   cursor: pointer;
+  margin: 5px;
 }
 .first-feed {
   padding: 0.5rem;
@@ -313,6 +313,12 @@ hr {
     margin-left: auto;
 }
 
+.write-items .icon-text
+{
+    margin-left: 0;
+    
+    text-align: center;
+}
 
 .icon-text
 {
@@ -354,6 +360,8 @@ hr {
 
   .main
   {
+      padding: 1rem;
       width: 100%;
+      margin: 0;
   }
 }
