@@ -364,4 +364,9 @@ hr {
       width: 100%;
       margin: 0;
   }
+  .tweet-content
+  {
+      font-size: small;
+      color: rgb(206, 206, 206);
+  }
 }
